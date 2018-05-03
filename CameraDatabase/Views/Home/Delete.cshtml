@@ -1,0 +1,160 @@
+﻿@model CameraDatabase.Models.Camera
+
+@{
+    ViewBag.Title = "Remove";
+}
+
+<div class="heading">
+    <a href="@Url.Action("Index")"><i class="fa fa-arrow-circle-left btnBack" title="Back to the main list"></i></a>
+    <h2>Remove Item</h2>
+</div>
+
+<hr />
+<div>
+    <h3>Are you sure you want to remove this camera?</h3>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Manufacturer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Manufacturer)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Model)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Model)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Style)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Style)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Megapixels)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Megapixels)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sensor)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Sensor)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ISO)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ISO)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Shutter)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Shutter)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FocusingPoints)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FocusingPoints)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Processor)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Processor)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Flash)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Flash)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Memory)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Memory)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Interface)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Interface)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Battery)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Battery)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Dimensions)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Dimensions)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Weight)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Weight)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 imgViewer">
+            <a href="@Html.DisplayFor(model => model.Image)" target="_blank"><img class="widePic" src="@Html.DisplayFor(model => model.Image)" /></a>
+        </div>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Remove Item" class="btn btn-default btn-danger btnDelete" />
+        </div>
+    }
+</div>

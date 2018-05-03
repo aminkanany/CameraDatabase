@@ -1,0 +1,129 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 0;
+    background-color: #080808;
+    color: #d3d3d3;
+}
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.imgViewer {
+    width: 500px;
+}
+
+.btn:hover {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btnBack {
+    font-size: 2em;
+    margin: 1em;
+}
+
+#search p {
+    margin-left: 30px;
+}
+
+.checked {
+    color: orange;
+}
+
+.heading i, .heading h2 {
+    display: inline;
+}
+
+.heading {
+    margin: 1em;
+}
+
+table img, section img {
+    width: 100px;
+}
+
+.widePic {
+    width: 100%;
+}
+
+.sampleImage {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section {
+    overflow: hidden;
+    margin-bottom: -30px;
+}
+
+i, .rating a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 3px #d3d3d3;
+}
+
+.btn {
+    background-color: #333;
+    border: 1px solid #fff;
+    margin: 5px;
+    color: #d3d3d3;
+}
+
+    .btn a {
+        text-decoration: none;
+        color: #d3d3d3;
+    }
+
+.btns {
+    margin-left: 4em;
+}
+
+    .btns .btn {
+        width: 150px;
+    }
+
+.btnDelete {
+    margin-left: 7em;
+    width: 250px;
+}
+
+footer {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #a09f9f;
+    position: page;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+    top: 100%;
+}
+
+    footer p {
+        margin: 0;
+    }
